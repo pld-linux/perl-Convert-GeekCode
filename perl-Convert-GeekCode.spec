@@ -8,7 +8,7 @@ Summary:	Convert::GeekCode - Convert and generate geek code sequences
 Summary(pl):	Convert::GeekCode - Generuj i konwertuj sekwencje ,,geek code''
 Name:		perl-Convert-GeekCode
 Version:	0.5
-Release:	1
+Release:	2
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -65,5 +65,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n geekcode-tools
 %defattr(644,root,root,755)
-%{_bindir}/*
+%attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*
