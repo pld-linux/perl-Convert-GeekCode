@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Convert
-%define	pnam	GeekCode
+%define		pdir	Convert
+%define		pnam	GeekCode
 Summary:	Convert::GeekCode - convert and generate geek code sequences
 Summary(pl):	Convert::GeekCode - generowanie i konwersja sekwencji ,,geek code''
 Name:		perl-Convert-GeekCode
