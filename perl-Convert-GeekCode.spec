@@ -7,12 +7,12 @@
 Summary:	Convert::GeekCode - Convert and generate geek code sequences
 Summary(pl):	Modu³ Convert::GeekCode - generuj±cy i konwertuj±cy sekwencje ,,geek code''
 Name:		perl-Convert-GeekCode
-Version:	0.5
-Release:	3
+Version:	0.51
+Release:	1
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0cd9cb181c86c85e9f5baf8d473cf031
+# Source0-md5:	8761684c417363bda5ca41fbcca8f3d5
 BuildRequires:	perl-devel >= 5.6
 %{!?_without_tests:BuildRequires:	perl-YAML}
 BuildRequires:	rpm-perlprov >= 4.1-13
