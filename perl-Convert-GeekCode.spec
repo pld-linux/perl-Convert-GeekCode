@@ -9,7 +9,8 @@ Summary(pl):	Convert::GeekCode - generowanie i konwersja sekwencji ,,geek code''
 Name:		perl-Convert-GeekCode
 Version:	0.51
 Release:	1
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8761684c417363bda5ca41fbcca8f3d5
