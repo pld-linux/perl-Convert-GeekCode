@@ -54,7 +54,7 @@ ze zwykle u¿ywanymi symbolami takimi jak (), >, ! i @.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
