@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Convert
 %define	pnam	GeekCode
@@ -15,7 +16,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8761684c417363bda5ca41fbcca8f3d5
 BuildRequires:	perl-devel >= 5.6
-%{!?_without_tests:BuildRequires:	perl-YAML}
+%{?with_tests:BuildRequires:	perl-YAML}
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -60,7 +61,7 @@ ze zwykle u¿ywanymi symbolami takimi jak (), >, ! i @.
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
