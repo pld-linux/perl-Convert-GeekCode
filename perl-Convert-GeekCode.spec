@@ -6,7 +6,7 @@
 %define		pdir	Convert
 %define		pnam	GeekCode
 Summary:	Convert::GeekCode - convert and generate geek code sequences
-Summary(pl):	Convert::GeekCode - generowanie i konwersja sekwencji ,,geek code''
+Summary(pl.UTF-8):   Convert::GeekCode - generowanie i konwersja sekwencji ,,geek code''
 Name:		perl-Convert-GeekCode
 Version:	0.51
 Release:	1
@@ -26,14 +26,14 @@ Convert::GeekCode converts and generates Geek Code sequences (cf.
 http://geekcode.com/). It supports different langugage codes and
 user-customizable codesets.
 
-%description -l pl
-Modu³ Convert::GeekCode konwertuje i generuje sekwencje Geek Code
-(http://geekcode.com/). Obs³uguje kody dla ró¿nych jêzyków i zestawy
-kodów definiowane przez u¿ytkownika.
+%description -l pl.UTF-8
+ModuÅ‚ Convert::GeekCode konwertuje i generuje sekwencje Geek Code
+(http://geekcode.com/). ObsÅ‚uguje kody dla rÃ³Å¼nych jÄ™zykÃ³w i zestawy
+kodÃ³w definiowane przez uÅ¼ytkownika.
 
 %package -n geekcode-tools
 Summary:	geekdec - Geek Code decoder, geekgen - Geek Code generator
-Summary(pl):	geekdec - dekoder i geekgen - generator Geek Code
+Summary(pl.UTF-8):   geekdec - dekoder i geekgen - generator Geek Code
 Group:		Applications
 Requires:	%{name}
 
@@ -45,13 +45,13 @@ geekgen generates Geek Code sequences interactively, according to
 user's input. User could mix numerical selections with usual symbols
 like (), >, ! and @.
 
-%description -n geekcode-tools -l pl
-geekdec analizuje sekwencje Geek Code czytane ze standardowego wyj¶cia
+%description -n geekcode-tools -l pl.UTF-8
+geekdec analizuje sekwencje Geek Code czytane ze standardowego wyjÅ›cia
 i wypisuje ich znaczenie.
 
 geekgen generuje sekwencje Geek Code interaktywnie, zgodnie z danymi
-wprowadzanymi przez u¿ytkownika. U¿ytkownik mo¿e mieszaæ numery opcji
-ze zwykle u¿ywanymi symbolami takimi jak (), >, ! i @.
+wprowadzanymi przez uÅ¼ytkownika. UÅ¼ytkownik moÅ¼e mieszaÄ‡ numery opcji
+ze zwykle uÅ¼ywanymi symbolami takimi jak (), >, ! i @.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
