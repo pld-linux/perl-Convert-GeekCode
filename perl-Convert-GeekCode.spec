@@ -6,7 +6,7 @@
 %define		pdir	Convert
 %define		pnam	GeekCode
 Summary:	Convert::GeekCode - convert and generate geek code sequences
-Summary(pl.UTF-8):   Convert::GeekCode - generowanie i konwersja sekwencji ,,geek code''
+Summary(pl.UTF-8):	Convert::GeekCode - generowanie i konwersja sekwencji ,,geek code''
 Name:		perl-Convert-GeekCode
 Version:	0.51
 Release:	1
@@ -33,7 +33,7 @@ kodów definiowane przez użytkownika.
 
 %package -n geekcode-tools
 Summary:	geekdec - Geek Code decoder, geekgen - Geek Code generator
-Summary(pl.UTF-8):   geekdec - dekoder i geekgen - generator Geek Code
+Summary(pl.UTF-8):	geekdec - dekoder i geekgen - generator Geek Code
 Group:		Applications
 Requires:	%{name}
 
