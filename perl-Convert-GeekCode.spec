@@ -9,7 +9,7 @@ Summary:	Convert::GeekCode - convert and generate geek code sequences
 Summary(pl.UTF-8):	Convert::GeekCode - generowanie i konwersja sekwencji ,,geek code''
 Name:		perl-Convert-GeekCode
 Version:	0.51
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
