@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Convert
 %define		pnam	GeekCode
+%include	/usr/lib/rpm/macros.perl
 Summary:	Convert::GeekCode - convert and generate geek code sequences
 Summary(pl.UTF-8):	Convert::GeekCode - generowanie i konwersja sekwencji ,,geek code''
 Name:		perl-Convert-GeekCode
@@ -15,9 +15,12 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	33db901752d33da513aa0b24f1e26db5
+URL:		http://search.cpan.org/dist/Convert-GeekCode/
 BuildRequires:	perl-devel >= 1:5.8.0
-%{?with_tests:BuildRequires:	perl-YAML}
 BuildRequires:	rpm-perlprov >= 4.1-13
+%if %{with tests}
+BuildRequires:	perl-YAML
+%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
