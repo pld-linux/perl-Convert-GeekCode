@@ -4,7 +4,6 @@
 
 %define		pdir	Convert
 %define		pnam	GeekCode
-%include	/usr/lib/rpm/macros.perl
 Summary:	Convert::GeekCode - convert and generate geek code sequences
 Summary(pl.UTF-8):	Convert::GeekCode - generowanie i konwersja sekwencji ,,geek code''
 Name:		perl-Convert-GeekCode
